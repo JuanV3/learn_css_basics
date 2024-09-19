@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Floating Images">
+    <title>Floating Images</title>
+    <style type="text/css">
+
+       h1{
+            text-align: center;
+            text-decoration: underline; 
+       }
+
+       img{
+            margin-right: 20px;
+       }
+
+       .float-left {
+            float: left;
+       }
+
+       .float-right {
+            float: right;
+       }
+
+       .clearfix::after{
+        /*
+        content: "";
+        clear: both;
+        display: table;
+        */
+        content: ".";
+        /* We will learn this display property in the next lesson.*/
+        display: block;
+        clear: both;
+        height: 0;
+        /* Hide the content that we placed above "." */
+        visibility: hidden;
+       }
+
+        /*
+            This code snippet is a famous hack that many developers use to clear any floating objects after the box.
+        */
+
+    </style>
+</head>
+<body>
+      
+    <h1>Purine</h1>
+    <div class="clearfix">
+        <img src="Purine.jpg" class="float-left" alt="Cat" height="250px" width="250px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elite. facere eligendi sunt 
+            nihil quas consectetur, laboriosam ad voluptates harum porro? eveniet non esse? Dolor,
+             quod! fugit vitae porro libero cum! Esse iure, repudiandae vel sint porro similique, 
+             tempora quis mollitia quae molestias illo! Fuga vel facere cupiditate asperiores sint 
+             omnis nisi!    
+        </p>
+    </div>
+    <hr>
+<div class="clearfix">   
+         <img src="Purine.jpg" class="float-right" alt="Cat" height="250px" width="250px">
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo, nostrum. Rem animi nostrum voluptatum delectus laborum obcaecati rerum sunt quam minima, ea, eum earum saepe voluptas tempore magnam maxime consequatur.</p>
+   </div> 
+<hr>
+   <div class="clearfix">     
+         <img src="Purine.jpg" class="float-left" alt="Cat" height="250px" width="250px">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, accusamus eum mollitia, amet, illum cumque ut sit porro at dicta dignissimos a. Quod accusamus illum sint ad voluptatibus eos. Pariatur rem perferendis ut et eos similique commodi error veritatis.</p>
+     </div>      
+<hr>
+     <div class="clearfix">
+          <img src="Purine.jpg" class="float-right" alt="Cat" height="250px" width="250px">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum provident aspernatur saepe molestias odit impedit ipsam quisquam recusandae facere, nisi neque ea ducimus nam illo officiis sit fugit! Dignissimos, ratione.</p>
+    </div>
+
+
+
+</body>
+</html>
