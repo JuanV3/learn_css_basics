@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Box Padding" />
+    <title>Box Padding</title>
+    <style type="text/css">
+      /*
+           Height and Width property is used to control the box sizes.
+
+           100 x 250 means 100 Width x 250 Height
+
+           Properties of the Height and Width:
+           - width
+           - height
+           - minwidth
+           - minheight
+           - maxwidth
+           - maxheight
+        */
+      .box250 {
+        height: 250px;
+        width: 250px;
+        border: 5px solid green;
+        margin: 10px;
+        min-width: 100px;
+        min-height: 100px;
+        background-color: blue;
+        color: black;
+        font-size: xx-large;
+        text-align: center;
+        padding-top: none;
+        border-color: palevioletred;
+        border-style: dashed;
+        border-width: 1cm;
+        border-radius: 5cm;
+        line-height: 100%;
+      }
+      .minbox100 {
+        border: 5px solid green;
+        margin: 10px;
+        min-width: 300px;
+        min-height: 300px;
+        text-align: center;
+        background-color: yellow;
+        color: red;
+        font-size: 25px;
+        letter-spacing: 0.2em;
+        word-spacing: 0.5em;
+        margin: 5%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+        border-top-left-radius: 5cm;
+        border-top-right-radius: 5cm;
+        border-width: 5cm;
+        border-style: double;
+        line-height: 3em;
+      }
+      .box500 {
+        border: 5px solid green;
+        margin: 10px;
+        max-width: 500px;
+        max-height: 500px;
+        background-color: green;
+        color: pink;
+        font-size: xx-large;
+        font-weight: 900;
+        font-style: oblique;
+        border-radius: 1cm;
+        border-color: black;
+        border-style: dotted;
+        border-width: 1cm;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box250">
+      BOX250 This is a box with 250x250 size and green-border and margin of
+      10px. Padding 10px
+    </div>
+
+    <div class="box250">
+      BOX250 This is a box with min-width 300px and min-height 300px. Padding
+      10px
+    </div>
+
+    <div class="box250">
+      BOX250 This is a box with 250x250 size and green-border and margin of
+      10px. Padding 10px
+    </div>
+
+    <div class="minbox100">
+      BOX100 This is a box with min height and width 300px size and green-border
+      and margin of 10px. Padding 10px. How big can I get?
+    </div>
+
+    <div class="box500" style="padding: 10px">
+      BOX500 This is a box with max height and width 500px. Padding 10px.
+    </div>
+  </body>
+</html>
